@@ -25,7 +25,7 @@ Luego de esto de llevara a la pagina del chat, cuando esten
 2 usuarios conectados, podrán hablarse entre ellos.
 
 
-Licensia MIT
+Licensia Apache
 ------------
 
 Segun la licensia puesta en LICENSE.md es libre la 
