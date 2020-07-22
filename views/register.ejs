@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html style="background-color: #37253c">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyPrivateFriend</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  </head>
+  <script src="https://www.jsdelivr.com/package/npm/bulma"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  
+  
+  
+  <style>
+  
+   {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    
+  </style>
+  <script>
+  
+    
+    
+    
+  <div id="myModal" class="modal">
+  
+  </script>
+  <body>
+<div class="center" style="text-align:center">
+  
+  
+  
+  
+  <div class="columns">
+  <div class="column"></div>
+  <div class="column">
+    <h1 class="title is-1" style="color: white">My Private Friend Chat</h1>
+    <h5 class="title is-5" style="color: white">Has click en el boton Register para crear una cuenta</h5>
+      <button class="button is-large is-fullwidth" id="myBtn">Register</button>
+    
+    
+    
+    </div>
+  <div class="column"></div>
+</div>
+  
+
+  
+  
+  
+  
+  
+    </div>
+    
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+
+<div class="columns">
+  <div class="column"></div>
+  <div class="column">
+  
+   <h1 class="title is-1" style="color: black">My Private Friend Chat</h1>
+    <h4 class="title is-4" style="color:black">MyPrivateFriend es un chat publico en donde puedes hablar de lo que quieras, porfavor elije un nombre de usuario y contraseña</h4>
+  
+  </div>
+  <div class="column">
+  
+        <label class="label">Username</label>
+    
+    <form method="post" id="formulario" action="/register/form">
+      <input class="input is-success" type="text" name="user" placeholder="Username" value="">
+      <label class="label">Password</label>
+       <input class="input is-success" type="password" name="pass" placeholder="Password" value="">
+       <button><a class="button" name="action" onclick="myFunction()">Register</a></button>
+    </form>
+    
+
+ 
+  
+  </div>
+    <div class="column">4</div>
+</div>
+    
+    
+    
+  </div>
+
+</div>
+    
+  </body>
+  
+  
+  
+  <script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+  
+  
+   function myFunction() {
+   var nameValue = document.getElementById("user").value;
+     var password = document.getElementById("pass").value;
+    console.log(nameValue)
+     console.log(password)
+   
+}
+  
+</script>
+    
+ 
+  
+  
+<script>
+  
+
+  
+
+  
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  
+</html>
