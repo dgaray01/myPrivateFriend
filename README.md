@@ -1,30 +1,38 @@
-# hello-express
+###MyPrivateFriend Chat
+MyPrivateFriend es una pagina web que 
+usa Quick.db (wrapper de sqlite) socket.io
+y express, tiene un sistema de login y register,
+fue creado en glitch, y su principal objetivo
+es que los usuarios puedan hablar de cosas 
+aca, para no tener problemas con Discord.
 
-A server that serves a webpage, its resources, and some data
+Links
+------------
+
+[👉 | Discord](https://discord.gg/Y3B3W5p)
+[👉 | Suggestion Bot](https://suggestions.wtf)
+[👉 | Github](https://github.com/iStyLEX23)
+
+¿Como funciona?
+------------
+Primero debes entrar a tu web y darle a Login, luego
+de esto si no tienes una cuenta dale click al texto
+que te dice acerca de registrarte. Luego dale al boton 
+de registrarse y pones tu usuario, tu contraseña y le das
+a registrar.
+
+Luego de esto de llevara a la pagina del chat, cuando esten 
+2 usuarios conectados, podrán hablarse entre ellos.
 
 
-## Your Project
+Licensia MIT
+------------
 
-On the front-end,
-
-- Edit `views/index.html` to change the content of the webpage
-- `public/client.js` is the javacript that runs when you load the webpage
-- `public/style.css` is the styles for `views/index.html`
-- Drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
+Segun la licensia puesta en LICENSE.md es libre la 
+copia de este software y sus codigos, pero siempre
+y cuando tu des creditos a "iStyLEX" en caso que
+no lo hagas, se podra poner una demanda legal
+por copyright, porfavor da creditos.
 
 
-## Made by [Glitch](https://glitch.com/)
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-( ᵔ ᴥ ᵔ )
