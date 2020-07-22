@@ -1,4 +1,4 @@
-#MyPrivateFriend Chat
+# MyPrivateFriend Chat
 MyPrivateFriend es una pagina web que 
 usa Quick.db (wrapper de sqlite) socket.io
 y express, tiene un sistema de login y register,
